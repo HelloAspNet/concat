@@ -1,0 +1,27 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "pid": 32496642,
+      "name": "#产品名称#",
+      "img": "images/prod-img1.jpg",
+      "agio": "3.6折",
+      "color": [
+        "黑色"
+      ],
+      "vipshop_price": 168
+    }
+  ],
+  "info": {
+    "wh": "VIP_SH",
+    "dataAB": "A",
+    "styleAB": "A",
+    "recoable": 1,
+    "method": "search.product.base",
+    "total": 3,
+    "pg": 1,
+    "ps": 3,
+    "time": "2014-09-22 11:17:47",
+    "elapse": "8.451ms"
+  }
+}

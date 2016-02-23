@@ -1,0 +1,161 @@
+@import "variables";
+@import "kbox";
+
+li{
+  .kmod-split2 &{
+    width: 100% / 2;
+  }
+  .kmod-split3 &{
+    width: 100% / 3;
+  }
+  .kmod-split4 &{
+    width: 100% / 4;
+  }
+  .kmod-split5 &{
+    width: 100% / 5;
+  }
+}
+
+.kmods {
+  overflow: hidden;
+  padding-bottom: 60px;
+  background: #F5EDEE;
+}
+
+.kmod {
+  background: no-repeat center top;
+}
+
+.kmod-bd {
+  .clearfix();
+  position: relative;
+  width: @body-width;
+  margin: 0 auto;
+}
+
+.kmod-header {
+  height: 300px;
+  background: url('images/header.jpg') no-repeat center;
+}
+
+.kmod-nav-wrap {
+  height: @nav-height;
+  background: #fff;
+}
+
+.kmod-nav {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: @nav-height;
+  margin: 0 auto;
+  background: #fff;
+  z-index: @nav-z-index;
+
+  &.kmod-fixed {
+    position: fixed;
+  }
+
+  li {
+    float: left;
+    // 用a边框做hover效果时去掉注释，现在是用js控制.kmod-hash-line做hover效果。
+    a {
+      display: block;
+      width: 100%;
+      height: @nav-height;
+      //height: @nav-height - 3px;
+      //border-bottom: 3px solid transparent;
+      background: url('images/nav.png') no-repeat 0 0;
+      .transition(background-position-y .4s);
+      &.kmod-hover,
+      &:hover {
+        //border-color: @bdc;
+        background-position-y: -100px;
+      }
+    }
+  }
+
+  .kmod-bd{
+    overflow: hidden;
+  }
+  .kmod-hash1 {
+    background-position-x: -@body-width * 0 / 3;
+  }
+  .kmod-hash2 {
+    background-position-x: -@body-width * 1 / 3;
+  }
+  .kmod-hash3 {
+    background-position-x: -@body-width * 2 / 3;
+  }
+}
+
+.kmod-hash-line{
+  position: absolute;
+  left: @body-width * -1 / 3;
+  bottom: 0;
+  height: 3px;
+  background-color: @bdc;
+  .transition(left .4s);
+  .kmod-hover1 &{
+    left: @body-width * 0 / 3
+  }
+  .kmod-hover2 &{
+    left: @body-width * 1 / 3
+  }
+  .kmod-hover3 &{
+    left: @body-width * 2 / 3
+  }
+}
+
+
+.kmod-target {
+  display: block;
+  position: relative;
+  top: -@nav-height;
+}
+
+
+
+.kmod-tt {
+  height: 80px;
+  line-height: 80px;
+  background: #ccc;
+  text-align: center;
+}
+
+.kmod-ct {
+  overflow: hidden;
+  padding: 10px;
+  background-color: #fff;
+}
+
+
+
+.kmod-sel-tt{
+  background: url(images/sel.jpg) no-repeat center;
+}
+.kmod-brand-tt{
+  background: url(images/brand.jpg) no-repeat center;
+}
+
+.kmod-top1-tt{
+  background: url(images/top1.jpg) no-repeat center;
+}
+
+.kmod-top2-tt{
+  background: url(images/top2.jpg) no-repeat center;
+}
+
+.kmod1{
+  padding-top: 30px;
+  height: 85px;
+  background: url('images/mod1.jpg') no-repeat center 30px;
+}
+.kmod2{
+  padding-top: 30px;
+  height: 85px;
+  background: url('images/mod2.jpg') no-repeat center 30px;
+}
+.kmod3{
+  padding-top: 60px;
+}

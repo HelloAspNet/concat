@@ -1,0 +1,320 @@
+/* 精选盒子-begin */
+.kbox-sel {
+  float: left;
+  width: 16.66666667%;
+  font-size: 14px;
+}
+.kbox-sel a {
+  display: block;
+  border: 1px solid transparent;
+  margin: 10px auto 0;
+  transition: border-color 0.4s;
+}
+.kbox-sel a:hover .kbox-sel-img {
+  border-color: #FD628C;
+}
+.kbox-sel-img {
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+}
+.kbox-sel-title {
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 精选盒子-end */
+/* 品牌盒子-begin */
+.kbox-brand {
+  float: left;
+  width: 50%;
+  font-size: 14px;
+}
+.kbox-brand a {
+  display: block;
+  width: 448px;
+  height: 280px;
+  margin: 10px auto 0;
+  border: 1px solid transparent;
+  padding: 10px;
+  transition: border-color 0.4s;
+}
+.kbox-brand a:hover {
+  border-color: #FD628C;
+}
+.kbox-brand-img-wrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+.kbox-brand-img {
+  display: block;
+  width: 448px;
+  height: 240px;
+}
+.kbox-brand-img-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 10px;
+  line-height: 28px;
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) repeat\0;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4d000000,endColorstr=#4d000000)\0;
+  zoom: 1\0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+:root .kbox-brand-img-info {
+  filter: none\9;
+}
+.kbox-brand-price {
+  float: left;
+  color: #FD628C;
+  line-height: 30px;
+}
+.kbox-brand-price em {
+  font-size: 24px;
+  font-weight: bold;
+}
+.kbox-brand-btn {
+  float: right;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #FD628C;
+  padding-left: 4px;
+  line-height: 30px;
+  text-align: center;
+  color: #FD628C;
+}
+.kbox-brand-title {
+  height: 30px;
+  padding: 0 10px;
+  line-height: 38px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 品牌盒子-end */
+/* 产品盒子-begin */
+.kbox-prod {
+  float: left;
+  width: 25%;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.kbox-prod a {
+  overflow: hidden;
+  display: block;
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  transition: border-color 0.4s;
+}
+.kbox-prod a:hover {
+  border-color: #FD628C;
+}
+.kbox-prod a:hover .kbox-prod-btn {
+  top: 0;
+}
+.kbox-prod-img {
+  display: block;
+  width: 200px;
+  height: 240px;
+  margin: 0 auto;
+}
+.kbox-prod-info {
+  position: relative;
+  margin-top: 10px;
+}
+.kbox-prod-title {
+  color: #333;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.kbox-prod-price {
+  color: #FD628C;
+  line-height: 30px;
+}
+.kbox-prod-price em {
+  position: relative;
+  bottom: -2px;
+  margin-right: 8px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.kbox-prod-price del {
+  position: relative;
+  bottom: -1px;
+  margin-left: 2px;
+  color: #999;
+}
+.kbox-prod-btn {
+  position: absolute;
+  top: 60px;
+  left: -11px;
+  right: -11px;
+  height: 60px;
+  padding-left: 4px;
+  line-height: 60px;
+  background-color: #FD628C;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  transition: top 0.4s;
+}
+/* 产品盒子-end */
+.kmod-split2 li {
+  width: 50%;
+}
+.kmod-split3 li {
+  width: 33.33333333%;
+}
+.kmod-split4 li {
+  width: 25%;
+}
+.kmod-split5 li {
+  width: 20%;
+}
+.kmods {
+  overflow: hidden;
+  padding-bottom: 60px;
+  background: #F5EDEE;
+}
+.kmod {
+  background: no-repeat center top;
+}
+.kmod-bd {
+  *zoom: 1;
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+.kmod-bd:before,
+.kmod-bd:after {
+  display: table;
+  content: "";
+}
+.kmod-bd:after {
+  clear: both;
+}
+.kmod-header {
+  height: 300px;
+  background: url('images/header.jpg') no-repeat center;
+}
+.kmod-nav-wrap {
+  height: 100px;
+  background: #fff;
+}
+.kmod-nav {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background: #fff;
+  z-index: 200;
+}
+.kmod-nav.kmod-fixed {
+  position: fixed;
+}
+.kmod-nav li {
+  float: left;
+}
+.kmod-nav li a {
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: url('images/nav.png') no-repeat 0 0;
+  transition: background-position-y 0.4s;
+}
+.kmod-nav li a.kmod-hover,
+.kmod-nav li a:hover {
+  background-position-y: -100px;
+}
+.kmod-nav .kmod-bd {
+  overflow: hidden;
+}
+.kmod-nav .kmod-hash1 {
+  background-position-x: 0px;
+}
+.kmod-nav .kmod-hash2 {
+  background-position-x: -320px;
+}
+.kmod-nav .kmod-hash3 {
+  background-position-x: -640px;
+}
+.kmod-hash-line {
+  position: absolute;
+  left: -320px;
+  bottom: 0;
+  height: 3px;
+  background-color: #FD628C;
+  transition: left 0.4s;
+}
+.kmod-hover1 .kmod-hash-line {
+  left: 0px;
+}
+.kmod-hover2 .kmod-hash-line {
+  left: 320px;
+}
+.kmod-hover3 .kmod-hash-line {
+  left: 640px;
+}
+.kmod-target {
+  display: block;
+  position: relative;
+  top: -100px;
+}
+.kmod-tt {
+  height: 80px;
+  line-height: 80px;
+  background: #ccc;
+  text-align: center;
+}
+.kmod-ct {
+  overflow: hidden;
+  padding: 10px;
+  background-color: #fff;
+}
+.kmod-sel-tt {
+  background: url(images/sel.jpg) no-repeat center;
+}
+.kmod-brand-tt {
+  background: url(images/brand.jpg) no-repeat center;
+}
+.kmod-top1-tt {
+  background: url(images/top1.jpg) no-repeat center;
+}
+.kmod-top2-tt {
+  background: url(images/top2.jpg) no-repeat center;
+}
+.kmod1 {
+  padding-top: 30px;
+  height: 85px;
+  background: url('images/mod1.jpg') no-repeat center 30px;
+}
+.kmod2 {
+  padding-top: 30px;
+  height: 85px;
+  background: url('images/mod2.jpg') no-repeat center 30px;
+}
+.kmod3 {
+  padding-top: 60px;
+}
+/*# sourceMappingURL=index.css.map */

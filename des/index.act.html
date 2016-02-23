@@ -1,0 +1,181 @@
+<style>
+    /*# include=index.css */
+</style>
+<!--模块总容器-begin-->
+<div class="kmods">
+
+    <!--模块头部-begin-->
+    <div class="kmod kmod-header">
+        <div class="kmod-bd"></div>
+    </div>
+    <!--模块头部-end-->
+
+    <!--模块主体-begin-->
+    <!--<div class="kmod-body"> -->
+    <!--悬浮导航-begin-->
+    <div class="kmod kmod-nav-wrap">
+        <div class="kmod-nav" id="kmod_nav_html">
+            <script type="text/html" id="kmod_nav_tpl">
+                <ul class="kmod-bd {{list.length > 1 ? 'kmod-split' + list.length : ''}}">
+                    {{each list as item}}
+                    <li>
+                        <a class="kmod-hash kmod-hash{{$index + 1}}"
+                           href="#kmod_hash{{$index + 1}}"
+                           data-id="kmod_hash{{$index + 1}}"
+                           target="_self"></a>
+                    </li>
+                    {{/each}}
+                    <li class="kmod-hash-line"></li>
+                </ul>
+            </script>
+        </div>
+    </div>
+    <!--悬浮导航-end-->
+
+    <div class="kmod kmod-sel">
+        <div class="kmod-bd">
+            <div class="kmod-tt kmod-sel-tt"></div>
+            <ul class="kmod-ct" id="kmod_sel_html">
+                <script type="text/html" id="kmod_sel_tpl">
+                    {{include 'sel.tpl'}}
+                </script>
+            </ul>
+        </div>
+    </div>
+
+    <!--文具图书-begin-->
+    <div class="kmod kmod1">
+        <div class="kmod-bd">
+            <a class="kmod-target" id="kmod_hash1"></a>
+        </div>
+    </div>
+    <div class="kmod kmod1-brand">
+        <div class="kmod-bd">
+            <div class="kmod-tt kmod-brand-tt"></div>
+            <ul class="kmod-ct" id="kmod1_brand_html">
+                <script type="text/html" id="kmod1_brand_tpl">
+                    {{include 'brand.tpl'}}
+                </script>
+            </ul>
+        </div>
+    </div>
+    <!--文具图书-end-->
+
+
+    <!--儿童玩具-begin-->
+    <div class="kmod kmod2">
+        <div class="kmod-bd">
+            <a class="kmod-target" id="kmod_hash2"></a>
+        </div>
+    </div>
+    <div class="kmod kmod2-brand">
+        <div class="kmod-bd">
+            <div class="kmod-tt kmod-brand-tt"></div>
+            <ul class="kmod-ct" id="kmod2_brand_html">
+                <script type="text/html" id="kmod2_brand_tpl">
+                    {{include 'brand.tpl'}}
+                </script>
+            </ul>
+        </div>
+    </div>
+    <!--儿童玩具-end-->
+
+
+    <!--TOP-begin-->
+    <div class="kmod kmod3">
+        <div class="kmod-bd">
+            <a class="kmod-target" id="kmod_hash3"></a>
+        </div>
+    </div>
+    <div class="kmod kmod31-prod">
+        <div class="kmod-bd">
+            <div class="kmod-tt kmod-top1-tt"></div>
+            <ul class="kmod-ct" id="kmod31_prod_html">
+                <script type="text/html" id="kmod31_prod_tpl">
+                    {{include 'prod.tpl'}}
+                </script>
+            </ul>
+        </div>
+    </div>
+    <div class="kmod kmod32-prod">
+        <div class="kmod-bd">
+            <div class="kmod-tt kmod-top2-tt"></div>
+            <ul class="kmod-ct" id="kmod32_prod_html">
+                <script type="text/html" id="kmod32_prod_tpl">
+                    {{include 'prod.tpl'}}
+                </script>
+            </ul>
+        </div>
+    </div>
+    <!--TOP-end-->
+
+
+    <!--</div>-->
+    <!--模块主体-end-->
+
+    <!--模块尾部-begin-->
+    <div class="kmod kmod-footer">
+        <div class="kmod-bd">
+            <a class="kmod-link" target="_blank" href="http://kid.vip.com/"></a>
+        </div>
+    </div>
+    <!--模块尾部-end-->
+</div>
+<!--模块容器-end-->
+
+<!--盒子模版-begin-->
+<script type="text/html" id="sel.tpl">
+    {{each data as obj}}
+    <li class="kbox-sel">
+        <a href="#">
+            <div class="kbox-sel-img-wrap">
+                <img class="kbox-sel-img" src="{{obj.img}}" alt="{{'kbox-sel-' + ($index + 1)}}"/>
+            </div>
+            <div class="kbox-sel-info">
+                <div class="kbox-sel-title">{{obj.name}}</div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script type="text/html" id="brand.tpl">
+    {{each data as obj}}
+    <li class="kbox-brand">
+        <a href="{{obj.link}}">
+            <div class="kbox-brand-img-wrap">
+                <img class="kbox-brand-img" src="{{obj.img}}" alt="{{'kbox-brand-' + ($index + 1)}}"/>
+
+                <div class="kbox-brand-img-info">{{obj.pms}}</div>
+            </div>
+            <div class="kbox-brand-info">
+                <div class="kbox-brand-price"><em>{{obj.agio | number}}</em>折起</div>
+                <div class="kbox-brand-btn">立即购买&nbsp;&gt;</div>
+                <div class="kbox-brand-title">{{obj.name}}</div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script type="text/html" id="prod.tpl">
+    {{each data as obj}}
+    <li class="kbox-prod">
+        <a href="{{obj.link}}">
+            <div class="kbox-prod-img-wrap">
+                <img class="kbox-prod-img" src="{{obj.img}}" alt="{{'kbox-prod-' + ($index + 1)}}"/>
+            </div>
+            <div class="kbox-prod-info">
+                <div class="kbox-prod-title">{{obj.name}}</div>
+                <div class="kbox-prod-price"><em>{{obj.vipshop_price | price}}</em>({{obj.agio | number}}折)
+                    <del>{{obj.market_price | price}}</del>
+                </div>
+                <div class="kbox-prod-btn">立即购买&nbsp;&gt;</div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<!--盒子模版-end-->
+
+<script>
+    /*# include=index.js */
+</script>

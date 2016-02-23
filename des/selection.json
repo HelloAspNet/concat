@@ -1,0 +1,29 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "name": "#名称#",
+      "img": "images/sel-img1.jpg"
+    },
+    {
+      "name": "#名称#",
+      "img": "images/sel-img2.jpg"
+    },
+    {
+      "name": "#名称#",
+      "img": "images/sel-img1.jpg"
+    }
+  ],
+  "info": {
+    "wh": "VIP_SH",
+    "dataAB": "A",
+    "styleAB": "A",
+    "recoable": 1,
+    "method": "search.brand.base",
+    "total": 3,
+    "pg": 1,
+    "ps": 3,
+    "time": "2014-09-22 11:17:47",
+    "elapse": "8.451ms"
+  }
+}
